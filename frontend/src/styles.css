@@ -5,6 +5,7 @@ body {
   
   .card {
     cursor: pointer;
+    
   }
   
   .modal-content img {
@@ -66,5 +67,9 @@ body {
   .arrow-button:hover {
     color: #ff9900;
   }
+
+html {
+    scroll-padding-top: 80px; /* navbar의 높이만큼 공간 확보 */
+}
 
 
