@@ -69,7 +69,6 @@ body {
   }
 
 html {
-    scroll-padding-top: 80px; /* navbar의 높이만큼 공간 확보 */
+    scroll-padding-top: 120px; /* navbar의 높이만큼 공간 확보 */
 }
-
 
