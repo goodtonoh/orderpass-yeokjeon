@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Analytics } from '@vercel/analytics/next';
 import MenuList from "./components/MenuList";
 import Modal from "./components/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,7 +23,7 @@ function App() {
     }
   };
   
-  
+
   return (
     <div className="container mt-4">
       {/* 🔥 상단 배너 */}
@@ -89,6 +90,7 @@ function App() {
       </div>
 
       {selectedImage && <Modal img={selectedImage} onClose={() => setSelectedImage(null)} />}
+      <Analytics />
     </div>
   );
 }
