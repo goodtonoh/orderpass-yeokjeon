@@ -54,6 +54,7 @@ function App() {
         <button onClick={() => scrollToSection("soups")}>탕류</button>
         <button onClick={() => scrollToSection("snacks")}>마른안주</button>
         <button onClick={() => scrollToSection("drinks")}>음료</button>
+        <button onClick={() => scrollToSection("beer")}>주류</button>
       </nav>
 
       {/* <h1 className="text-center">🍗 깐부치킨 메뉴 🍗</h1> */}
@@ -98,9 +99,18 @@ function App() {
         <MenuList menu={menu.filter((item) => item.category === "음료")} setSelectedImage={setSelectedImage} />
       </div>
 
+      <div id="beer">
+        <h2 className="menu-title">주류</h2>
+        <MenuList menu={menu.filter((item) => item.category === "주류")} setSelectedImage={setSelectedImage} />
+      </div>
+      
       {selectedImage && <Modal img={selectedImage} onClose={() => setSelectedImage(null)} />}
+      
+      {/* <Route path="/checkout" element={<CheckoutPage />} />
+      </Routes> */}
     </div>
   );
 }
 
 export default App;
+
