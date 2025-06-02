@@ -15,37 +15,16 @@ body {
     width: 100%;
   }
 
-  /* styles.css */
   .navbar {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 15px;
-    padding: 10px 0 20px;
+    background-color: transparent;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: white;
-
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
-
-    /* 스크롤 바 스타일 */
-    scrollbar-width: thin;
-    scrollbar-color: #ccc transparent;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .navbar::-webkit-scrollbar {
-    height: 6px;
-  }
-  .navbar::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 10px;
-  }
-  .navbar::-webkit-scrollbar-track {
-    background: transparent;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
   }
   
   .navbar button {
@@ -58,9 +37,6 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
-    flex-shrink: 0;
-    white-space: nowrap;
   }
   
   .navbar button:hover {

@@ -21,10 +21,20 @@ function App() {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
   
 
   return (
     <div className="container mt-4">
+
+      <button
+        onClick={() => alert("💵 간편결제 준비중..")}
+        // onClick={() => navigate("/checkout")}
+        className="payment-text-button"
+        style={{ marginBottom: "20px" }}
+      >
+        💳 1000원 결제하기
+      </button>
       {/* 🔥 상단 배너 */}
       <div className="text-center mb-4">
         <img
